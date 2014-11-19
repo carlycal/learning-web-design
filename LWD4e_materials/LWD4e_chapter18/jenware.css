@@ -17,7 +17,9 @@ body {
   background-repeat: repeat-x;
   background-color: #fdf9bd; /* Old browsers */
 }
-
+img{
+  max-width: 100%;
+}
 
 /* link styles */
 a {
@@ -130,8 +132,41 @@ a:active {
   border-left: 3px solid;
   padding-left: 1em;
 }
-
-
+@media screen and (min-width: 481px){
+  #products img{
+  float: left;
+  margin: 0 6px 6px 0;
+}
+#products .more{
+  clear: left;
+}
+#products{
+  margin: 1em;
+}
+#testimonials{
+  margin: 1em 5%;
+  border-radius: 16px;
+}
+}
+@media screen and (min-width: 780px){
+  #products{
+  float: left;
+  margin: 0 2% 1em;
+  clear: both;
+  width: 55%;
+  overflow: auto;
+}
+testimonials{
+  margin: 1em 2% 1em 64%;
+}
+p#copyright{
+  clear: both;
+}
+#content{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+}
 /* styles for the testimonials box */
 
 #testimonials {
